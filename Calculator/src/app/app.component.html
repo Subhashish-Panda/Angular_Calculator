@@ -1,0 +1,49 @@
+<div class="container" style="min-height:600px;">
+  <div class="row" style="margin-top:20px;">
+    <div class="col-sm-6 offset-sm-3">
+    <div class="card">
+    <div class="card-body">
+      <div class="card-title text-center border" style="background-color:gray;">
+      <h4>Simple calculator</h4>
+      </div>
+      <div class="card-text">
+      <div class="form-group">
+      <label>Number1</label>
+      <input type="number" class="form-control" [(ngModel)]="num1">
+      </div>
+      <div class="form-group">
+      <label>Number2</label>
+      <input type="number" class="form-control" [(ngModel)]="num2">
+      </div>
+      <div class="form-row">
+      <div class="form-group col-sm-4 col-6">
+      <button  class="btn btn-dark btn-sm btn-block" (click)="find(1)">Add</button>
+      </div>
+      <div class="form-group col-sm-4 col-6">
+      <button  class="btn btn-warning btn-sm btn-block"  (click)="find(2)">Sub</button>
+      </div>
+      <div class="form-group col-sm-4 col-6">
+      <button  class="btn btn-primary btn-sm btn-block"  (click)="find(3)">Mul</button>
+      </div>
+      <div class="form-group col-sm-4 col-6">
+      <button  class="btn btn-success btn-sm btn-block"  (click)="find(4)">Div</button>
+      </div>
+      <div class="form-group col-sm-4 col-6">
+      <button  class="btn btn-info btn-sm btn-block"  (click)="find(5)">Rem</button>
+      </div>
+      <div class="form-group col-sm-4 col-6">
+      <button  class="btn btn-danger btn-sm btn-block"  (click)="find(6)">Clear</button>
+      </div>
+      </div>
+      <div class="form-group">
+      <label>Result</label>
+      <input type="number" class="form-control" [(ngModel)]="res" readonly>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="card-footer text-center" style="color:rgb(127,255,0); background-color:black;">
+  Developed by Hacker99
+  </div>
+</div>
+</div>
